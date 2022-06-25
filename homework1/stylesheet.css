@@ -1,0 +1,64 @@
+/* make each problem header larger */
+div p {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+/* adding border to the table */
+#table,
+th,
+td {
+  border: medium solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+/* style table content */
+th,
+td {
+  text-align: center;
+  font-size: 2vw;
+  padding: 10px;
+}
+/* make stripe color on table */
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+/* highlight table header */
+th {
+  background-color: aqua;
+}
+/* highlight the row when mouse hover */
+.row:hover {
+  background-color: yellow;
+}
+
+/* style Google input */
+#2 {
+  width: 100%;
+}
+#input {
+  border: thin solid black;
+  border-radius: 80px;
+  padding: 10px;
+  width: 80%;
+  background: url("icons8-search-24.png") no-repeat left,
+    url("icons8-microphone-24.png") no-repeat right;
+}
+
+/* style list  */
+.list {
+  font-size: 2vw;
+}
+/* style dropdown list */
+#dropdown {
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 0px 100px 20px;
+  padding: 5px;
+}
