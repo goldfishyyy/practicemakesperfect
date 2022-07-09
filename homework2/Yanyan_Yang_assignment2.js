@@ -50,10 +50,6 @@ console.log("*******************************************************");
 /*                                            Problem 1.3
 Given the array, implement a function to calculate the total value of the items. 
 */
-// let totalValue = itemsObject.reduce(totalValueFunction, 0);
-// function totalValueFunction(total, item) {
-//   return total + item.quantity * item.price;
-// }
 function totalValue(array) {
   let result = array.reduce(
     (total, item) => total + item.quantity * item.price,
