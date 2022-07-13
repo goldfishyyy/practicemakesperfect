@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+}
+th,
+td,
+table {
+  border: medium solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 2vw;
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+th{
+    background-color: yellow;
+}
+tr:hover{
+    background-color: aqua;
+}
+
+.problem-number{
+    font-size: 2vw
+}
+
+select{
+  border: medium solid black;
+  border-radius: 5px;
+  font-size: 2vw;
+  margin: 0px 0px 100px 20px;
+  padding: 5px;
+
+}
