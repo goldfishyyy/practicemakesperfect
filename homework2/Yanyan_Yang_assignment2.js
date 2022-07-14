@@ -67,11 +67,16 @@ console.log("*******************************************************");
 Given the string, implement a function to remove all the non-alphabet characters
      and extra space in the string and convert the string to all lowercase.
 */
-const string =
-  " Perhaps The Easiest-to-understand Case For Reduce Is To Return The Sum Of All The Elements In An Array ";
+// const string =
+//   " Perhaps The Easiest-to-understand   Case   For Reduce Is    To Return The Sum Of All The Elements In An Array ";
+
+
+const string = ' Perhaps The Easiest-to-understand   Case   For Reduce Is   To Return The Sum Of  All The Elements In  An Array  ';
+
+
 
 function convertString(stringInput) {
-  return stringInput.trim().split("-").join(" ").toLowerCase();
+  return stringInput.trim().replace(/\s+/g, " ").split("-").join(" ").toLowerCase();
 }
 let newString = convertString(string);
 console.log("Problem 2 convert string:");
@@ -103,9 +108,9 @@ function mergeArray(array1, array2) {
     map.set(item.uuid, { ...map.get(item.uuid), ...item })
   );
   //create array using map value, sort array by uuid
-  let mergeArray = Array.from(map.values()).sort((a, b) => a.uuid - b.uuid);
+  let newArray = Array.from(map.values()).sort((a, b) => a.uuid - b.uuid);
   //format array with null
-  const result = mergeArray.map((item) => {
+  const result = newArray.map((item) => {
     const model = { uuid: null, name: null, role: null };
     return { ...model, ...item };
   });
